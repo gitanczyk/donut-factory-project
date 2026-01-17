@@ -2,17 +2,38 @@
 <html lang="pl">
 <head>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+        // Prosty Test A/B
+        document.addEventListener("DOMContentLoaded", function() {
+            const buyButtons = document.querySelectorAll('.buy-now-btn');
+            // Losowanie: 0 lub 1
+            const variant = Math.random() < 0.5 ? 'A' : 'B';
 
-      // Ustawienie domyślne: wszystko zablokowane
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': 'denied',
-        'wait_for_update': 500 // Czekaj 0.5 sekundy na update
-      });
+            if (variant === 'B') {
+                buyButtons.forEach(btn => {
+                    btn.style.backgroundColor = "#7209b7"; // Fioletowy
+                    btn.innerText = "BIORĘ TO! 🍩";
+                });
+            }
+
+            // Wyślij informację o wersji do GTM / GA4
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'ab_test_variant',
+                'experiment_name': 'color_test_01',
+                'variant_id': variant
+            });
+        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+
+        // Ustawienie domyślne: wszystko zablokowane
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'wait_for_update': 500 // Czekaj 0.5 sekundy na update
+        });
     </script>
 
     <!-- Google Tag Manager -->
