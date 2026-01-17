@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5DV82ZN5');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Factory - Różowa Rozkosz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --donut-pink: #ffb7c5; --glaze-pink: #f72585; --dough-light: #fff5f7; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--dough-light); color: #444; }
+        h1, h2, h3 { font-family: 'Pacifico', cursive; color: var(--glaze-pink); }
+        
+        .carousel-item { height: 600px; background-size: cover; background-position: center; }
+        .carousel-caption { background: rgba(255, 255, 255, 0.8); border-radius: 20px; padding: 30px; color: #333; bottom: 15%; border: 3px solid var(--donut-pink); }
+        
+        .product-card { background: white; border: 3px solid var(--donut-pink); border-radius: 25px; overflow: hidden; transition: 0.3s; height: 100%; }
+        .product-img { width: 100%; height: 250px; object-fit: cover; }
+        .btn-pink { background-color: var(--glaze-pink); color: white; border-radius: 50px; border: none; font-weight: bold; padding: 12px 25px; }
+        .btn-pink:hover { background-color: #d61c6f; color: white; }
+        
+        .features-list { list-style: none; padding: 0; }
+        .features-list li { background: white; margin-bottom: 12px; padding: 20px; border-radius: 15px; border-left: 8px solid var(--glaze-pink); shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .testimonial { font-style: italic; background: white; padding: 25px; border-radius: 20px; border: 2px dashed var(--glaze-pink); height: 100%; }
+        footer { background: #333; color: white; padding: 50px 0; margin-top: 60px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DV82ZN5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=80');">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="carousel-caption shadow-lg">
+                        <h1 class="display-3">Donut Factory</h1>
+                        <p class="lead">Prawdziwa eksplozja słodyczy w każdym kęsie.</p>
+                        <a href="#details-section" class="btn btn-pink btn-lg">Zobacz więcej</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1200&q=80');">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="carousel-caption shadow-lg">
+                        <h1 class="display-3">Zawsze Świeże</h1>
+                        <p class="lead">Dostawa pod drzwi w mniej niż 30 minut.</p>
+                        <a href="#products" class="btn btn-pink btn-lg">Sprawdź ofertę</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="products" class="container my-5">
+        <h2 class="text-center mb-5 display-4">Wybierz swój ulubiony</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="product-card shadow-sm">
+                    <img src="rose-donut.jpg" class="product-img" alt="Pączek Różany">
+                    <div class="p-4 text-center">
+                        <h3>Klasyczna Róża</h3>
+                        <p>Aksamitna konfitura ukryta w puszystym cieście.</p>
+                        <a href="#details-section" class="btn btn-outline-secondary btn-sm rounded-pill me-2">Szczegóły</a>
+                        <a href="zamowienie.html?product=Roza" class="btn btn-pink">Kup teraz</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="product-card shadow-sm">
+                    <img src="strawberry-donut.jpg" class="product-img" alt="Donut Truskawkowy">
+                    <div class="p-4 text-center">
+                        <h3>Strawberry Dream</h3>
+                        <p>Podwójna warstwa truskawkowej polewy z posypką.</p>
+                        <a href="#details-section" class="btn btn-outline-secondary btn-sm rounded-pill me-2">Szczegóły</a>
+                        <a href="zamowienie.html?product=Truskawka" class="btn btn-pink">Kup teraz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Sekret naszej receptury</h2>
+        <div class="ratio ratio-16x9 shadow-lg rounded-4 overflow-hidden mx-auto" style="max-width: 850px;">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Donut Making" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="details-section" class="container my-5">
+        <h2 class="text-center mb-4">Dlaczego Donut Factory?</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <ul class="features-list">
+                    <li>🍩 <strong>Tylko naturalne barwniki:</strong> Ekstrakty z owoców zamiast chemii.</li>
+                    <li>🍩 <strong>Smażone na świeżo:</strong> Robimy je 3 razy dziennie.</li>
+                    <li>🍩 <strong>Eko-Pudełka:</strong> Dbamy o planetę tak samo jak o smak.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-5">Nasi fani</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="testimonial shadow-sm text-center">
+                    "Te donuty uratowały moją imprezę! Goście nie mogli przestać ich jeść." <br><strong>– Karolina</strong>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonial shadow-sm text-center">
+                    "Najlepszy stosunek ceny do jakości w mieście. Rabaty przy większych zamówieniach to sztos!" <br><strong>– Piotr</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p><strong>Administrator:</strong> Donut Factory Sp. z o.o. | RODO | Kontakt: pączek@donut.pl</p>
+            <p>&copy; 2026 Słodkie Projekty Edukacyjne.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
